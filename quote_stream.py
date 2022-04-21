@@ -15,9 +15,9 @@ def generate_user_payload(
     :params: consumer: API consumer object which is generated. See more in `consumer_creds.py`
     :params: base_currency: the base currency you want to change from.
     :params: quote_currency: the quote currency you want to change to.
+    :params: quantity_currency: the quantity currency for which we want to know the quote.
     :params: client_reference: Client reference which helps us identify the client.
     """
-    ## For the Python wrapper, only need to send `item1`.
     return {
         'accountId': consumer.account_id,
         'fundId': consumer.fund_id,
